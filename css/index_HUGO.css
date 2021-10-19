@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+
+
+body {
+  background: url(https://images.pexels.com/photos/6350273/pexels-photo-6350273.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+
+article{
+    
+    padding-top: 12em;
+    margin: 0%;
+    text-align: center;
+    padding-left: 17em;
+    padding-right: 17em;
+
+}
+
+article p{
+    color: rgb(255, 255, 255);
+    background-color: rgba(134, 87, 0, 0.404);
+    padding: 2em;
+    font-size: 1.1em;
+}
+
+.capa {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0);
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+/*encabezado*/
+.header {
+  width: 100%;
+  height: 80px;
+  top: 0;
+  left: 0;
+  background-color: rgb(75, 0, 0);
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+.container .btn-menu,
+.logo {
+  float: left;
+  line-height: 80px;
+}
+
+.container .btn-menu label {
+  margin-right: 0em;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.logo h1 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 22px;
+  margin-left: 10px;
+}
+.container .menu {
+  float: right;
+  line-height: 80px;
+}
+.container .menu a {
+  display: inline-block;
+  padding: 15px;
+  line-height: normal;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent;
+  font-size: 15px;
+  margin-right: 5px;
+}
+.container .menu a:hover {
+  border-bottom: 2px solid #520000;
+  background: rgba(255, 255, 255, 0.144);
+  padding-bottom: 5px;
+}
+/*Fin encabezado*/
+
+/*Menù lateral*/
+#btn-menu {
+  display: none;
+}
+.container-menu {
+  position: absolute;
+  background: rgba(0, 19, 71, 0.253);
+  width: 100%;
+  height: 130vh;
+  top: 0;
+  left: 0;
+  transition: all 500ms ease;
+  opacity: 0;
+  visibility: hidden;
+}
+#btn-menu:checked ~ .container-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.cont-menu {
+  width: 100%;
+  max-width: 250px;
+  background: #350101c7;
+  height: 130vh;
+  position: relative;
+  transition: all 500ms ease;
+  transform: translateX(-100%);
+}
+#btn-menu:checked ~ .container-menu .cont-menu {
+  transform: translateX(0%);
+}
+.cont-menu nav {
+  transform: translateY(15%);
+}
+
+.cont-menu nav a {
+  display: block;
+  text-decoration: none;
+  padding: 20px;
+  color: #c7c7c7;
+  border-left: 5px solid transparent;
+  transition: all 400ms ease;
+}
+
+
+
+
+
+.cont-menu nav a:hover {
+  border-left: 5px solid #c7c7c7;
+  background: rgba(134, 87, 0, 0.404);
+}
+
+.cont-menu label {
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+}
+/*Fin de Menù lateral*/
+
+body a:hover {
+  background-color: rgb(97, 231, 255);
+}
+
+body h1 {
+  color: rgb(119, 0, 0);
+  font-family: "calibri";
+}
+
+footer {
+    
+    padding-left: 2.5em;
+    padding-top: 4.3em;
+    
+}
+
+
+footer span{
+    text-align: left;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 124, 207, 0.623);
+    padding: 3px;
+    border-radius: 10px;
+}
+
+footer span:hover{
+    text-align: left;
+    color: rgb(0, 0, 0);
+    background-color: rgba(0, 152, 223, 0.322);
+    padding: 3px;
+    border-radius: 10px;
+}
+
+
+
+#datos{
+  padding-top: 10em;
+}
+
+address{
+  color: rgb(255, 255, 255);
+  padding: 1em;
+  text-align: right;
+}
